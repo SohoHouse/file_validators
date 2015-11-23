@@ -39,6 +39,8 @@ module FileValidators
           # TODO: log command failure
           DEFAULT_CONTENT_TYPE
         end.strip
+
+        type.include?('No such file or directory') ? DEFAULT_CONTENT_TYPE : type
       end
     end
 
