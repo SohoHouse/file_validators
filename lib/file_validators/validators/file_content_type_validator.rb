@@ -1,5 +1,6 @@
 require 'file_validators/utils/content_type_detector'
 require 'file_validators/utils/media_type_spoof_detector'
+require 'file_validators/utils/file_command_content_type_detector'
 
 module ActiveModel
   module Validations
